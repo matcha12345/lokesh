@@ -1,1 +1,11 @@
-
+-- creating pod
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod
+spec:
+  containers:
+    - name: cont1
+      image: shaikmustafa/dm
+      ports:
+        - containerPort: 80
